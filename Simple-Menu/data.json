@@ -1,0 +1,64 @@
+[
+    {
+        "id": 1,
+        "name": "Salad",
+        "category": "salad",
+        "price": 300,
+        "image": "images/salad.avif"
+    },
+    {
+        "id": 2,
+        "name": "Burger",
+        "category": "burger",
+        "price": 700,
+        "image": "images/burgerimages.jpg"
+    },{
+        "id": 3,
+        "name": "Nuggets",
+        "category": "nuggets",
+        "price": 400,
+        "image": "images/nugget.webp"
+    },
+    {
+        "id": 4,
+        "name": "Classic French Fries",
+        "category": "fries",
+        "price": 250,
+        "image": "images/friesimages.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Chocolate Milkshake",
+        "category": "drinks",
+        "price": 350,
+        "image": "images/milkshakeimages.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Fruit Salad",
+        "category": "salad",
+        "price": 500,
+        "image": "images/fruitimages.jpg"
+    },
+    {
+        "id": 7,
+        "name": "Double Cheese Burger",
+        "category": "burger",
+        "price": 800,
+        "image": "images/doubleBurger.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Tunna Pizza Slice",
+        "category": "pizza",
+        "price": 700,
+        "image": "images/tunaimages.jpg"
+    },
+    {
+        "id": 9,
+        "name": "Iced Soft Drink",
+        "category": "drinks",
+        "price": 180,
+        "image": "images/refreshing-summer-drinks-with-ice-mint-and-citrus-photo.jpg"
+    }
+]

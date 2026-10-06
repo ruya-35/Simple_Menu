@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AddisEats - Food Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-container">
+        <main class="main-content">
+            
+            <header class="top-bar">
+                <div class="logo-container">
+                    <img src="images/restaurant.png" alt="Addis Eats Logo" class="logo-img">
+                    <span class="logo-text">Addis Eats</span>
+                </div>
+                
+                <div class="search-box">
+                    <span class="search-icon"><img src="images/search (1).png" alt=""></span>
+                    <input type="text" id="menu-search" placeholder="Search dishes...">
+                </div>
+
+                <div class="top-actions">
+                    <button class="icon-btn cart-btn" id="cart-toggle" aria-label="Cart">
+                        <span class="cart-icon"><img src="images/shopping-cart (1).png" alt=""></span>
+                        <span class="badge" id="cart-badge">0</span>
+                    </button>
+                </div>
+            </header>
+
+            <section class="hero-banner">
+                <div class="banner-overlay">
+                    <h1>Food Menu</h1>
+                    <p>Choose your preference, Delivered quick</p>
+                </div>
+            </section>
+
+            <section class="category-filters" id="category-filters">
+                <button class="filter-btn active" data-category="all">All</button>
+                <button class="filter-btn" data-category="burger">Burgers</button>
+                <button class="filter-btn" data-category="pizza">Pizza</button>
+                <button class="filter-btn" data-category="salad">Salads</button>
+                <button class="filter-btn" data-category="fries">Fries</button>
+                <button class="filter-btn" data-category="drinks">Drinks</button>
+            </section>
+
+            <section class="food-items-section">
+                <div class="food-grid" id="menu-items-container"></div>
+            </section>
+
+        </main>
+
+        <aside class="cart-sidebar" id="cart-sidebar">
+            <div class="cart-header">
+                <h2>My Cart</h2>
+                <button class="close-sidebar-btn" id="close-sidebar" aria-label="Close cart">&times;</button>
+            </div>
+
+            <div class="cart-items" id="cart-items-container"></div>
+
+            <div class="cart-footer">
+                <div class="cart-total-box">
+                    <span>Total</span>
+                    <span class="total-price" id="cart-total">0 ETB</span>
+                </div>
+
+                <button class="checkout-btn" id="checkout-btn">Checkout</button>
+
+                <form id="checkout-form" class="checkout-form hidden" novalidate>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="Your Full Name" required />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone (TeleBirr)</label>
+                        <input type="tel" id="phone" placeholder="09xxxxxxxx" required />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="area">Delivery area</label>
+                        <select id="area">
+                            <option value="Bole">Bole</option>
+                            <option value="Kazanchis">Kazanchis</option>
+                            <option value="Megenagna">Megenagna</option>
+                        </select>
+                    </div>
+                    <p id="form-error" class="error-msg" aria-live="polite"></p>
+                    <button type="submit" class="checkout-btn">Place Order</button>
+                </form>
+            </div>
+        </aside>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
